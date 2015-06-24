@@ -13,7 +13,6 @@ namespace MonoSerBuilder
             var model = TypeModel.Create();
             var type = Type.GetType("MonoDto.OrderHeader, MonoDto");
             model.Add(type, true);
-            int i = 1;
             type = Type.GetType("MonoDto.OrderDetail, MonoDto");
             model.Add(type, true);
             model.Compile("OrderSerializer", "MonoDtoSerializer.dll");
